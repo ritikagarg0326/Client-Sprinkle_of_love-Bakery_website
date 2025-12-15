@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff7f3;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 45px;
+}
+
+.brand {
+    margin-left: 10px;
+    font-weight: 700;
+    color: #ff4d79;
+    font-size: 1.1rem;
+}
+
+.nav-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.call-btn {
+    color: #ff4d79;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.order-btn {
+    background: #ff4d79;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 20px;
+    color: #ff4d79;
+}
+
+.icon.whatsapp {
+    color: #25D366;
+}
+
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 60px;
+
+    background-color: #fff7f3;
+    background-image:
+        linear-gradient(to right, rgba(255, 224, 234, 0.95) 55%, rgba(255, 255, 255, 0.2)),
+        url("images/cake9.jpg");
+
+    background-repeat: no-repeat;
+    background-size: 45% auto;
+    /* 👈 FIX */
+    background-position: right center;
+    /* 👈 FIX */
+    overflow: hidden;
+}
+
+
+/* SECTIONS */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff4d79;
+    margin-bottom: 15px;
+}
+
+/* ABOUT */
+.about p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.rating {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* GALLERY */
+.gallery-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* VIDEO SECTION */
+.video-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.video-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-grid video {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* CONTACT */
+.contact a {
+    color: #ff4d79;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    background: #ff7aa2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .video-box video {
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 25px;
+        background-position: center;
+    }
+
+    .hero-bg-text {
+        font-size: 2.5rem;
+        left: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
